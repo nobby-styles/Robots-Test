@@ -13,19 +13,18 @@
 		89BC076526EE74F200F103DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BC076326EE74F200F103DC /* Main.storyboard */; };
 		89BC076726EE74F400F103DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BC076626EE74F400F103DC /* Assets.xcassets */; };
 		89BC076A26EE74F400F103DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BC076826EE74F400F103DC /* LaunchScreen.storyboard */; };
-		89BC077526EE74F400F103DC /* RobotsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC077426EE74F400F103DC /* RobotsTestTests.swift */; };
-		89BC078026EE74F400F103DC /* RobotsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC077F26EE74F400F103DC /* RobotsTestUITests.swift */; };
+		89BC077526EE74F400F103DC /* StringParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC077426EE74F400F103DC /* StringParserTests.swift */; };
+		89BC079626EE75DE00F103DC /* RobotsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC079526EE75DE00F103DC /* RobotsManager.swift */; };
+		89BC079C26EE764600F103DC /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC079B26EE764600F103DC /* Robot.swift */; };
+		89BC07A126EE77DC00F103DC /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC07A026EE77DC00F103DC /* Map.swift */; };
+		89BC07A626EE78D900F103DC /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC07A526EE78D900F103DC /* Parser.swift */; };
+		89BC07AE26EE820300F103DC /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89BC07AD26EE820300F103DC /* data.txt */; };
+		89BC07B326EE8B7600F103DC /* databadmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89BC07B226EE8B7600F103DC /* databadmap.txt */; };
+		89BC07BD26EE9B0A00F103DC /* databadrobots.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89BC07BC26EE9B0A00F103DC /* databadrobots.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		89BC077126EE74F400F103DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89BC075226EE74F200F103DC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89BC075926EE74F200F103DC;
-			remoteInfo = RobotsTest;
-		};
-		89BC077C26EE74F400F103DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 89BC075226EE74F200F103DC /* Project object */;
 			proxyType = 1;
@@ -44,11 +43,15 @@
 		89BC076926EE74F400F103DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89BC076B26EE74F400F103DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89BC077026EE74F400F103DC /* RobotsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89BC077426EE74F400F103DC /* RobotsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsTestTests.swift; sourceTree = "<group>"; };
+		89BC077426EE74F400F103DC /* StringParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringParserTests.swift; sourceTree = "<group>"; };
 		89BC077626EE74F400F103DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89BC077B26EE74F400F103DC /* RobotsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89BC077F26EE74F400F103DC /* RobotsTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsTestUITests.swift; sourceTree = "<group>"; };
-		89BC078126EE74F400F103DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89BC079526EE75DE00F103DC /* RobotsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsManager.swift; sourceTree = "<group>"; };
+		89BC079B26EE764600F103DC /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		89BC07A026EE77DC00F103DC /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		89BC07A526EE78D900F103DC /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		89BC07AD26EE820300F103DC /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		89BC07B226EE8B7600F103DC /* databadmap.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = databadmap.txt; sourceTree = "<group>"; };
+		89BC07BC26EE9B0A00F103DC /* databadrobots.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = databadrobots.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +69,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89BC077826EE74F400F103DC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +77,6 @@
 			children = (
 				89BC075C26EE74F200F103DC /* RobotsTest */,
 				89BC077326EE74F400F103DC /* RobotsTestTests */,
-				89BC077E26EE74F400F103DC /* RobotsTestUITests */,
 				89BC075B26EE74F200F103DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +86,6 @@
 			children = (
 				89BC075A26EE74F200F103DC /* RobotsTest.app */,
 				89BC077026EE74F400F103DC /* RobotsTestTests.xctest */,
-				89BC077B26EE74F400F103DC /* RobotsTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +93,13 @@
 		89BC075C26EE74F200F103DC /* RobotsTest */ = {
 			isa = PBXGroup;
 			children = (
+				89BC07B226EE8B7600F103DC /* databadmap.txt */,
+				89BC07BC26EE9B0A00F103DC /* databadrobots.txt */,
+				89BC07AD26EE820300F103DC /* data.txt */,
+				89BC079426EE756800F103DC /* Outputter */,
+				89BC079326EE755100F103DC /* Parser */,
+				89BC079226EE754800F103DC /* Model */,
+				89BC079026EE752C00F103DC /* Manager */,
 				89BC075D26EE74F200F103DC /* AppDelegate.swift */,
 				89BC075F26EE74F200F103DC /* SceneDelegate.swift */,
 				89BC076126EE74F200F103DC /* ViewController.swift */,
@@ -113,19 +114,42 @@
 		89BC077326EE74F400F103DC /* RobotsTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				89BC077426EE74F400F103DC /* RobotsTestTests.swift */,
+				89BC077426EE74F400F103DC /* StringParserTests.swift */,
 				89BC077626EE74F400F103DC /* Info.plist */,
 			);
 			path = RobotsTestTests;
 			sourceTree = "<group>";
 		};
-		89BC077E26EE74F400F103DC /* RobotsTestUITests */ = {
+		89BC079026EE752C00F103DC /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				89BC077F26EE74F400F103DC /* RobotsTestUITests.swift */,
-				89BC078126EE74F400F103DC /* Info.plist */,
+				89BC079526EE75DE00F103DC /* RobotsManager.swift */,
 			);
-			path = RobotsTestUITests;
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		89BC079226EE754800F103DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89BC079B26EE764600F103DC /* Robot.swift */,
+				89BC07A026EE77DC00F103DC /* Map.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89BC079326EE755100F103DC /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				89BC07A526EE78D900F103DC /* Parser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		89BC079426EE756800F103DC /* Outputter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Outputter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +190,6 @@
 			productReference = 89BC077026EE74F400F103DC /* RobotsTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		89BC077A26EE74F400F103DC /* RobotsTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89BC078A26EE74F400F103DC /* Build configuration list for PBXNativeTarget "RobotsTestUITests" */;
-			buildPhases = (
-				89BC077726EE74F400F103DC /* Sources */,
-				89BC077826EE74F400F103DC /* Frameworks */,
-				89BC077926EE74F400F103DC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89BC077D26EE74F400F103DC /* PBXTargetDependency */,
-			);
-			name = RobotsTestUITests;
-			productName = RobotsTestUITests;
-			productReference = 89BC077B26EE74F400F103DC /* RobotsTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +203,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					89BC076F26EE74F400F103DC = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 89BC075926EE74F200F103DC;
-					};
-					89BC077A26EE74F400F103DC = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 89BC075926EE74F200F103DC;
 					};
@@ -221,7 +223,6 @@
 			targets = (
 				89BC075926EE74F200F103DC /* RobotsTest */,
 				89BC076F26EE74F400F103DC /* RobotsTestTests */,
-				89BC077A26EE74F400F103DC /* RobotsTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,20 +232,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BC07AE26EE820300F103DC /* data.txt in Resources */,
 				89BC076A26EE74F400F103DC /* LaunchScreen.storyboard in Resources */,
 				89BC076726EE74F400F103DC /* Assets.xcassets in Resources */,
+				89BC07BD26EE9B0A00F103DC /* databadrobots.txt in Resources */,
+				89BC07B326EE8B7600F103DC /* databadmap.txt in Resources */,
 				89BC076526EE74F200F103DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		89BC076E26EE74F400F103DC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89BC077926EE74F400F103DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BC079C26EE764600F103DC /* Robot.swift in Sources */,
 				89BC076226EE74F200F103DC /* ViewController.swift in Sources */,
 				89BC075E26EE74F200F103DC /* AppDelegate.swift in Sources */,
+				89BC079626EE75DE00F103DC /* RobotsManager.swift in Sources */,
+				89BC07A126EE77DC00F103DC /* Map.swift in Sources */,
 				89BC076026EE74F200F103DC /* SceneDelegate.swift in Sources */,
+				89BC07A626EE78D900F103DC /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BC077526EE74F400F103DC /* RobotsTestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89BC077726EE74F400F103DC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89BC078026EE74F400F103DC /* RobotsTestUITests.swift in Sources */,
+				89BC077526EE74F400F103DC /* StringParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +280,6 @@
 			isa = PBXTargetDependency;
 			target = 89BC075926EE74F200F103DC /* RobotsTest */;
 			targetProxy = 89BC077126EE74F400F103DC /* PBXContainerItemProxy */;
-		};
-		89BC077D26EE74F400F103DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 89BC075926EE74F200F103DC /* RobotsTest */;
-			targetProxy = 89BC077C26EE74F400F103DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -513,46 +501,6 @@
 			};
 			name = Release;
 		};
-		89BC078B26EE74F400F103DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 54LN227PKS;
-				INFOPLIST_FILE = RobotsTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.redmond.me.RobotsTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RobotsTest;
-			};
-			name = Debug;
-		};
-		89BC078C26EE74F400F103DC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 54LN227PKS;
-				INFOPLIST_FILE = RobotsTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.redmond.me.RobotsTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RobotsTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,15 +527,6 @@
 			buildConfigurations = (
 				89BC078826EE74F400F103DC /* Debug */,
 				89BC078926EE74F400F103DC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89BC078A26EE74F400F103DC /* Build configuration list for PBXNativeTarget "RobotsTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89BC078B26EE74F400F103DC /* Debug */,
-				89BC078C26EE74F400F103DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
