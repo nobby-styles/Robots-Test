@@ -8,11 +8,18 @@
 import Foundation
 
 enum Instructions: String {
+    
+    // rotate left command
     case L
+    
+    // rotate right command
     case R
+    
+    // move forward command
     case F
 }
 
+// the Outpputter runs the instructions to move the Robot objects and converts the Robot objects back into text
 class Outputter {
     let robots: [Robot]
     var map: Map

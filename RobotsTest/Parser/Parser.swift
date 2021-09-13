@@ -7,6 +7,7 @@
 
 import Foundation
 
+// The parser coverts the text into a map object and robot object
 class Parser {
     let textToParse: String
     
@@ -61,6 +62,7 @@ class Parser {
               instructions.count < 100,
               positionArr.count == 3
         else { return nil }
+        
         return Robot(orientation: orientation, x: x, y: y, instructions: instructions)
     }
 }

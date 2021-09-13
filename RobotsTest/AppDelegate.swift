@@ -10,10 +10,8 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    let robotManager = RobotManager.init(inputFileName: "data", outputFileName: "output")
+    let robotManager = RobotsManager.init(inputFileName: "data", outputFileName: "output")
     _ = robotManager.processAndOutput()
     return true
   }

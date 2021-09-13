@@ -11,6 +11,8 @@
 		898510AB26EF586E00BF6630 /* OrientationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898510AA26EF586E00BF6630 /* OrientationTests.swift */; };
 		898510AF26EF7D0F00BF6630 /* RobotManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898510AE26EF7D0F00BF6630 /* RobotManagerTests.swift */; };
 		898510B326EF82BA00BF6630 /* outputtest in Resources */ = {isa = PBXBuildFile; fileRef = 898510B226EF82BA00BF6630 /* outputtest */; };
+		898510B726EF910600BF6630 /* InputOutputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898510B626EF910600BF6630 /* InputOutputManager.swift */; };
+		898510C126EF97CE00BF6630 /* FileInputOutputManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898510C026EF97CE00BF6630 /* FileInputOutputManagerTests.swift */; };
 		89BC075E26EE74F200F103DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC075D26EE74F200F103DC /* AppDelegate.swift */; };
 		89BC076026EE74F200F103DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC075F26EE74F200F103DC /* SceneDelegate.swift */; };
 		89BC076226EE74F200F103DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC076126EE74F200F103DC /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 		898510AA26EF586E00BF6630 /* OrientationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationTests.swift; sourceTree = "<group>"; };
 		898510AE26EF7D0F00BF6630 /* RobotManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotManagerTests.swift; sourceTree = "<group>"; };
 		898510B226EF82BA00BF6630 /* outputtest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = outputtest; sourceTree = "<group>"; };
+		898510B626EF910600BF6630 /* InputOutputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOutputManager.swift; sourceTree = "<group>"; };
+		898510C026EF97CE00BF6630 /* FileInputOutputManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInputOutputManagerTests.swift; sourceTree = "<group>"; };
 		89BC075A26EE74F200F103DC /* RobotsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BC075D26EE74F200F103DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89BC075F26EE74F200F103DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				89BC07DA26EF29B900F103DC /* OutputterTests.swift */,
 				898510AA26EF586E00BF6630 /* OrientationTests.swift */,
 				898510AE26EF7D0F00BF6630 /* RobotManagerTests.swift */,
+				898510C026EF97CE00BF6630 /* FileInputOutputManagerTests.swift */,
 			);
 			path = RobotsTestTests;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				89BC079526EE75DE00F103DC /* RobotsManager.swift */,
+				898510B626EF910600BF6630 /* InputOutputManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 				89BC079626EE75DE00F103DC /* RobotsManager.swift in Sources */,
 				89BC07A126EE77DC00F103DC /* Map.swift in Sources */,
 				89BC076026EE74F200F103DC /* SceneDelegate.swift in Sources */,
+				898510B726EF910600BF6630 /* InputOutputManager.swift in Sources */,
 				89BC07A626EE78D900F103DC /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +308,7 @@
 				89BC07DB26EF29B900F103DC /* OutputterTests.swift in Sources */,
 				898510AB26EF586E00BF6630 /* OrientationTests.swift in Sources */,
 				898510AF26EF7D0F00BF6630 /* RobotManagerTests.swift in Sources */,
+				898510C126EF97CE00BF6630 /* FileInputOutputManagerTests.swift in Sources */,
 				89BC077526EE74F400F103DC /* StringParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

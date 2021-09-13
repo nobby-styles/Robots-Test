@@ -7,28 +7,15 @@
 
 import Foundation
 
-class RobotManager {
-
-    let ouputFileName: String
-    let parser: Parser?
-  
+// RobostManager is responsible for handling the interactions between the inputoutputmanager, parser and outputter
+class RobotsManager {
+    var parser: Parser? = nil
+    let inputOutputManger: InputOutputManager
   
     init(inputFileName: String, outputFileName: String) {
-        self.ouputFileName = outputFileName
-        guard let path = Bundle.main.path(forResource: inputFileName, ofType: "txt") else {
-            debugPrint("no file exists at this loocation")
-            parser = nil
-            return
-        }
-        do {
-            let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
-            self.parser = Parser(textToParse: text)
-            
-        } catch {
-            parser = nil
-            debugPrint("Failed to read text from \(path)")
-        }
-       
+        self.inputOutputManger = FileInputOutputManager(inputFileName: inputFileName, outputFileName: outputFileName)
+        guard let stringForParsing = inputOutputManger.stringForParsing() else { return }
+        self.parser = Parser(textToParse: stringForParsing)
     }
     
     func processAndOutput() -> Bool{
@@ -36,19 +23,9 @@ class RobotManager {
         let outputter = Outputter(robots: result.robots, map: result.map)
         let outputString = outputter.output()
         guard !outputString.isEmpty else { return false }
-        let filename = getDocumentsDirectory().appendingPathComponent(ouputFileName)
-        do {
-            try outputString.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
-        } catch {
-            return false
-        }
-        return true
+        return inputOutputManger.save(string: outputString)
     }
     
-    private func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-    
-    
+
+
 }
