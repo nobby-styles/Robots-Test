@@ -11,7 +11,7 @@ import XCTest
 class StringParserTests: XCTestCase {
 
     func testZeroLengthString() throws {
-        let parser = StringParser(textToParse: "")
+        let parser = Parser(textToParse: "")
         XCTAssertNil(parser.parse())
     }
     
@@ -22,12 +22,12 @@ class StringParserTests: XCTestCase {
         }
         do {
             let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
-            let parser = StringParser(textToParse: text)
+            let parser = Parser(textToParse: text)
             let results = parser.parse()
             XCTAssertNil(results)
             
         } catch {
-            print("Failed to read text from \(path)")
+            debugPrint("Failed to read text from \(path)")
         }
     }
     
@@ -38,7 +38,7 @@ class StringParserTests: XCTestCase {
         }
         do {
             let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
-            let parser = StringParser(textToParse: text)
+            let parser = Parser(textToParse: text)
             let results = parser.parse()
             XCTAssertNil(results)
             
@@ -54,12 +54,12 @@ class StringParserTests: XCTestCase {
         }
         do {
             let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
-            let parser = StringParser(textToParse: text)
+            let parser = Parser(textToParse: text)
             let results = parser.parse()
             XCTAssertNil(results)
             
         } catch {
-            print("Failed to read text from \(path)")
+            debugPrint("Failed to read text from \(path)")
         }
         
     }
@@ -71,13 +71,13 @@ class StringParserTests: XCTestCase {
         }
         do {
             let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
-            let parser = StringParser(textToParse: text)
+            let parser = Parser(textToParse: text)
             let results = parser.parse()
             XCTAssertNotNil(results)
             guard let robots = results?.0  else { return }
             XCTAssertEqual(robots.count, 2)
         } catch {
-            print("Failed to read text from \(path)")
+            debugPrint("Failed to read text from \(path)")
         }
     }
     
@@ -88,7 +88,7 @@ class StringParserTests: XCTestCase {
         }
         do {
             let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
-            let parser = StringParser(textToParse: text)
+            let parser = Parser(textToParse: text)
             let results = parser.parse()
             XCTAssertNotNil(results)
             guard let map = results?.1 else { return }
@@ -102,7 +102,7 @@ class StringParserTests: XCTestCase {
             XCTAssertEqual(robots[1].instructions, "FRRFLLFFRRFLL")
             
         } catch {
-            print("Failed to read text from \(path)")
+            debugPrint("Failed to read text from \(path)")
         }
     }
     
@@ -113,7 +113,7 @@ class StringParserTests: XCTestCase {
         }
         do {
             let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
-            let parser = StringParser(textToParse: text)
+            let parser = Parser(textToParse: text)
             let results = parser.parse()
             XCTAssertNotNil(results)
             guard let map = results?.1 else { return }
@@ -123,7 +123,7 @@ class StringParserTests: XCTestCase {
             XCTAssertEqual(robots.count, 2)
             
         } catch {
-            print("Failed to read text from \(path)")
+            debugPrint("Failed to read text from \(path)")
         }
     }
 
