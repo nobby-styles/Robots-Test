@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		898510A726EF57D300BF6630 /* datarobotsinstructioncharacters100.txt in Resources */ = {isa = PBXBuildFile; fileRef = 898510A626EF57D300BF6630 /* datarobotsinstructioncharacters100.txt */; };
+		898510AB26EF586E00BF6630 /* OrientationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898510AA26EF586E00BF6630 /* OrientationTests.swift */; };
 		89BC075E26EE74F200F103DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC075D26EE74F200F103DC /* AppDelegate.swift */; };
 		89BC076026EE74F200F103DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC075F26EE74F200F103DC /* SceneDelegate.swift */; };
 		89BC076226EE74F200F103DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC076126EE74F200F103DC /* ViewController.swift */; };
@@ -21,6 +23,10 @@
 		89BC07AE26EE820300F103DC /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89BC07AD26EE820300F103DC /* data.txt */; };
 		89BC07B326EE8B7600F103DC /* databadmap.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89BC07B226EE8B7600F103DC /* databadmap.txt */; };
 		89BC07BD26EE9B0A00F103DC /* databadrobots.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89BC07BC26EE9B0A00F103DC /* databadrobots.txt */; };
+		89BC07C526EEA00A00F103DC /* Ouputter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC07C426EEA00A00F103DC /* Ouputter.swift */; };
+		89BC07C926EEA5A800F103DC /* datamapgreaterthan50.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89BC07C826EEA5A800F103DC /* datamapgreaterthan50.txt */; };
+		89BC07CD26EEA60000F103DC /* datarobotgreaterthan50.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89BC07CC26EEA60000F103DC /* datarobotgreaterthan50.txt */; };
+		89BC07DB26EF29B900F103DC /* OutputterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC07DA26EF29B900F103DC /* OutputterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		898510A626EF57D300BF6630 /* datarobotsinstructioncharacters100.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datarobotsinstructioncharacters100.txt; sourceTree = "<group>"; };
+		898510AA26EF586E00BF6630 /* OrientationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationTests.swift; sourceTree = "<group>"; };
 		89BC075A26EE74F200F103DC /* RobotsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BC075D26EE74F200F103DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89BC075F26EE74F200F103DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +60,10 @@
 		89BC07AD26EE820300F103DC /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		89BC07B226EE8B7600F103DC /* databadmap.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = databadmap.txt; sourceTree = "<group>"; };
 		89BC07BC26EE9B0A00F103DC /* databadrobots.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = databadrobots.txt; sourceTree = "<group>"; };
+		89BC07C426EEA00A00F103DC /* Ouputter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ouputter.swift; sourceTree = "<group>"; };
+		89BC07C826EEA5A800F103DC /* datamapgreaterthan50.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datamapgreaterthan50.txt; sourceTree = "<group>"; };
+		89BC07CC26EEA60000F103DC /* datarobotgreaterthan50.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datarobotgreaterthan50.txt; sourceTree = "<group>"; };
+		89BC07DA26EF29B900F103DC /* OutputterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,9 @@
 		89BC075C26EE74F200F103DC /* RobotsTest */ = {
 			isa = PBXGroup;
 			children = (
+				898510A626EF57D300BF6630 /* datarobotsinstructioncharacters100.txt */,
+				89BC07CC26EEA60000F103DC /* datarobotgreaterthan50.txt */,
+				89BC07C826EEA5A800F103DC /* datamapgreaterthan50.txt */,
 				89BC07B226EE8B7600F103DC /* databadmap.txt */,
 				89BC07BC26EE9B0A00F103DC /* databadrobots.txt */,
 				89BC07AD26EE820300F103DC /* data.txt */,
@@ -116,6 +131,8 @@
 			children = (
 				89BC077426EE74F400F103DC /* StringParserTests.swift */,
 				89BC077626EE74F400F103DC /* Info.plist */,
+				89BC07DA26EF29B900F103DC /* OutputterTests.swift */,
+				898510AA26EF586E00BF6630 /* OrientationTests.swift */,
 			);
 			path = RobotsTestTests;
 			sourceTree = "<group>";
@@ -148,6 +165,7 @@
 		89BC079426EE756800F103DC /* Outputter */ = {
 			isa = PBXGroup;
 			children = (
+				89BC07C426EEA00A00F103DC /* Ouputter.swift */,
 			);
 			path = Outputter;
 			sourceTree = "<group>";
@@ -234,9 +252,12 @@
 			files = (
 				89BC07AE26EE820300F103DC /* data.txt in Resources */,
 				89BC076A26EE74F400F103DC /* LaunchScreen.storyboard in Resources */,
+				89BC07C926EEA5A800F103DC /* datamapgreaterthan50.txt in Resources */,
+				89BC07CD26EEA60000F103DC /* datarobotgreaterthan50.txt in Resources */,
 				89BC076726EE74F400F103DC /* Assets.xcassets in Resources */,
 				89BC07BD26EE9B0A00F103DC /* databadrobots.txt in Resources */,
 				89BC07B326EE8B7600F103DC /* databadmap.txt in Resources */,
+				898510A726EF57D300BF6630 /* datarobotsinstructioncharacters100.txt in Resources */,
 				89BC076526EE74F200F103DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89BC079C26EE764600F103DC /* Robot.swift in Sources */,
+				89BC07C526EEA00A00F103DC /* Ouputter.swift in Sources */,
 				89BC076226EE74F200F103DC /* ViewController.swift in Sources */,
 				89BC075E26EE74F200F103DC /* AppDelegate.swift in Sources */,
 				89BC079626EE75DE00F103DC /* RobotsManager.swift in Sources */,
@@ -269,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BC07DB26EF29B900F103DC /* OutputterTests.swift in Sources */,
+				898510AB26EF586E00BF6630 /* OrientationTests.swift in Sources */,
 				89BC077526EE74F400F103DC /* StringParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

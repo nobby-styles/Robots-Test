@@ -33,15 +33,15 @@ class StringParser: Parser {
         return (robots, map)
     }
     
-    func createMap(string: String) -> Map? {
+    private func createMap(string: String) -> Map? {
         let arr = string.components(separatedBy: " ")
-        guard let maxX = Int(arr[0]), let  maxY = Int(arr[1]), arr.count == 2 else { return nil }
+        guard let maxX = Int(arr[0]), let  maxY = Int(arr[1]), maxX <= 50, maxY <= 50,  arr.count == 2 else { return nil }
         return Map(maxX: maxX, maxY: maxY, lostCoords: [Coords]())
     }
     
-    func createRobot(startingPositon: String, instructions: String) -> Robot? {
+    private func createRobot(startingPositon: String, instructions: String) -> Robot? {
         let positionArr = startingPositon.components(separatedBy: " ")
-        guard let x = Int(positionArr[0]), let y = Int(positionArr[1]), let orientation = Orientation(rawValue: positionArr[2]), positionArr.count == 3 else { return nil }
+        guard let x = Int(positionArr[0]), let y = Int(positionArr[1]), let orientation = Orientation(rawValue: positionArr[2]), x <= 50, y <= 50, instructions.count < 100, positionArr.count == 3 else { return nil }
         return Robot(orientation: orientation, x: x, y: y, instructions: instructions)
     }
 }

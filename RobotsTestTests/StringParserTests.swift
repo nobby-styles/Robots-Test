@@ -46,7 +46,40 @@ class StringParserTests: XCTestCase {
             print("Failed to read text from \(path)")
         }
     }
+    
+    func testMapCoordsGreaterThan50() throws {
+        guard let path = Bundle.main.path(forResource: "datamapgreaterthan50", ofType: "txt") else {
+            return
+            
+        }
+        do {
+            let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
+            let parser = StringParser(textToParse: text)
+            let results = parser.parse()
+            XCTAssertNil(results)
+            
+        } catch {
+            print("Failed to read text from \(path)")
+        }
+        
+    }
 
+    func testOneMapThreRobotsOneWithCoordGreaterThan50() throws {
+        guard let path = Bundle.main.path(forResource: "datarobotgreaterthan50", ofType: "txt") else {
+            return
+            
+        }
+        do {
+            let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
+            let parser = StringParser(textToParse: text)
+            let results = parser.parse()
+            XCTAssertNotNil(results)
+            guard let robots = results?.0  else { return }
+            XCTAssertEqual(robots.count, 2)
+        } catch {
+            print("Failed to read text from \(path)")
+        }
+    }
     
     func testOneMap3Robots() throws {
         guard let path = Bundle.main.path(forResource: "data", ofType: "txt") else {
@@ -67,6 +100,27 @@ class StringParserTests: XCTestCase {
             XCTAssertEqual(robots[1].x, 3)
             XCTAssertEqual(robots[1].y, 2)
             XCTAssertEqual(robots[1].instructions, "FRRFLLFFRRFLL")
+            
+        } catch {
+            print("Failed to read text from \(path)")
+        }
+    }
+    
+    func testOneMap3RobotsOneHasInstructionsEqual100Chars() throws {
+        guard let path = Bundle.main.path(forResource: "datarobotsinstructioncharacters100", ofType: "txt") else {
+            return
+            
+        }
+        do {
+            let text = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
+            let parser = StringParser(textToParse: text)
+            let results = parser.parse()
+            XCTAssertNotNil(results)
+            guard let map = results?.1 else { return }
+            XCTAssertEqual(map.maxX, 5)
+            XCTAssertEqual(map.maxY, 3)
+            guard let robots = results?.0  else { return }
+            XCTAssertEqual(robots.count, 2)
             
         } catch {
             print("Failed to read text from \(path)")

@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias Coords = (Int, Int)
+typealias Coords = (x: Int, y: Int)
 
 struct Map {
     let maxX: Int
