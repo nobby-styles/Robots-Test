@@ -7,7 +7,7 @@
 
 import Foundation
 
-// The parser coverts the text into a map object and robot object
+// The parser converts the text into a map object and robot object
 class Parser {
     let textToParse: String
     

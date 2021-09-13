@@ -13,7 +13,7 @@ enum Orientation: String {
     case E
     case W
     
-    // this the coordinate to add when the robot moves forward
+    // this is the coordinate to add when the robot moves forward
     func coord() -> (x: Int, y: Int) {
         switch self {
         case .N:

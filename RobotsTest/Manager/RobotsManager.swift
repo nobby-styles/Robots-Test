@@ -7,7 +7,7 @@
 
 import Foundation
 
-// RobostManager is responsible for handling the interactions between the inputoutputmanager, parser and outputter
+// RobotsManager is responsible for handling the interactions between the inputoutputmanager, parser and outputter
 class RobotsManager {
     var parser: Parser? = nil
     let inputOutputManger: InputOutputManager
